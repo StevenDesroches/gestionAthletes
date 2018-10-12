@@ -1,0 +1,20 @@
+2018-10-11 11:48:28 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eventssportdb.clubs_files' doesn't exist in D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'clubs_files', Array, Object(Cake\Database\Schema\TableSchema))
+#1 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('clubs_files', Array)
+#2 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('clubs_files')
+#3 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 D:\Ampps\www\GestionAtheles\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 D:\Ampps\www\GestionAtheles\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Ampps\www\GestionAtheles\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'clubs_files', 'ClubsFiles')
+#7 D:\Ampps\www\GestionAtheles\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('ClubsFiles')
+#8 D:\Ampps\www\GestionAtheles\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('ClubsFiles')
+#9 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('ClubsFiles', 0)
+#10 D:\Ampps\www\GestionAtheles\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('clubsFiles')
+#12 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 D:\Ampps\www\GestionAtheles\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 D:\Ampps\www\GestionAtheles\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+

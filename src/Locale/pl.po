@@ -1,0 +1,627 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-11 16:05+0000\n"
+"PO-Revision-Date: 2018-10-11 12:55-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n"
+"%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: pl\n"
+
+#: Controller/AthletesController.php:59;87
+msgid "The athlete has been saved."
+msgstr "Zawodnik został uratowany."
+
+#: Controller/AthletesController.php:63;91
+msgid "The athlete could not be saved. Please, try again."
+msgstr "Zawodnika nie można uratować. Proszę spróbuj ponownie."
+
+#: Controller/AthletesController.php:112
+msgid "The athlete has been deleted."
+msgstr "Zawodnik został usunięty."
+
+#: Controller/AthletesController.php:114
+msgid "The athlete could not be deleted. Please, try again."
+msgstr "Zawodnik nie mógł zostać usunięty. Proszę spróbuj ponownie."
+
+#: Controller/ClubsController.php:55;81
+msgid "The club has been saved."
+msgstr "Klub został zapisany."
+
+#: Controller/ClubsController.php:59;85
+msgid "The club could not be saved. Please, try again."
+msgstr "Klubu nie można uratować. Proszę spróbuj ponownie."
+
+#: Controller/ClubsController.php:103
+msgid "The club has been deleted."
+msgstr "Klub został usunięty."
+
+#: Controller/ClubsController.php:105
+msgid "The club could not be deleted. Please, try again."
+msgstr "Klubu nie można usunąć. Proszę spróbuj ponownie."
+
+#: Controller/EventsController.php:58;84
+msgid "The event has been saved."
+msgstr "Zdarzenie zostało zapisane."
+
+#: Controller/EventsController.php:62;88
+msgid "The event could not be saved. Please, try again."
+msgstr "Nie można zapisać wydarzenia. Proszę spróbuj ponownie."
+
+#: Controller/EventsController.php:107
+msgid "The event has been deleted."
+msgstr "Wydarzenie zostało usunięte."
+
+#: Controller/EventsController.php:109
+msgid "The event could not be deleted. Please, try again."
+msgstr "Zdarzenie nie mogło zostać usunięte. Proszę spróbuj ponownie."
+
+#: Controller/EventtypesController.php:55;79
+msgid "The eventtype has been saved."
+msgstr "Typ zdarzenia został zapisany."
+
+#: Controller/EventtypesController.php:59;83
+msgid "The eventtype could not be saved. Please, try again."
+msgstr "Nie można zapisać typu zdarzenia. Proszę spróbuj ponownie."
+
+#: Controller/EventtypesController.php:100
+msgid "The eventtype has been deleted."
+msgstr "Typ zdarzenia został usunięty."
+
+#: Controller/EventtypesController.php:102
+msgid "The eventtype could not be deleted. Please, try again."
+msgstr "Typu zdarzenia nie można usunąć. Proszę spróbuj ponownie."
+
+#: Controller/FilesController.php:37 Controller/HomeController.php:34
+msgid "File has been uploaded and inserted successfully."
+msgstr "Plik został pomyślnie przesłany i wstawiony."
+
+#: Controller/FilesController.php:39;42 Controller/HomeController.php:36;39
+msgid "Unable to upload file, please try again."
+msgstr "Nie można przesłać pliku, spróbuj ponownie."
+
+#: Controller/FilesController.php:45 Controller/HomeController.php:42
+msgid "Please choose a file to upload."
+msgstr "Wybierz plik do przesłania."
+
+#: Controller/FilesController.php:88;112
+msgid "The file has been saved."
+msgstr "Plik został zapisany."
+
+#: Controller/FilesController.php:92;116
+msgid "The file could not be saved. Please, try again."
+msgstr "Nie można zapisać pliku. Proszę spróbuj ponownie."
+
+#: Controller/FilesController.php:135
+msgid "The file has been deleted."
+msgstr "Plik został usunięty."
+
+#: Controller/FilesController.php:137
+msgid "The file could not be deleted. Please, try again."
+msgstr "Nie można usunąć pliku. Proszę spróbuj ponownie."
+
+#: Controller/GenresController.php:55;79
+msgid "The genre has been saved."
+msgstr "Gatunek został zapisany. \t"
+
+#: Controller/GenresController.php:59;83
+msgid "The genre could not be saved. Please, try again."
+msgstr "Gatunek nie mógł zostać zapisany. Proszę spróbuj ponownie."
+
+#: Controller/GenresController.php:100
+msgid "The genre has been deleted."
+msgstr "Gatunek został usunięty. \t"
+
+#: Controller/GenresController.php:102
+msgid "The genre could not be deleted. Please, try again."
+msgstr "Gatunek nie mógł zostać usunięty. Proszę spróbuj ponownie."
+
+#: Controller/UsersController.php:61;85
+msgid "The user has been saved."
+msgstr "Użytkownik został zapisany."
+
+#: Controller/UsersController.php:65;89
+msgid "The user could not be saved. Please, try again."
+msgstr "Nie można zapisać użytkownika. Proszę spróbuj ponownie."
+
+#: Controller/UsersController.php:106
+msgid "The user has been deleted."
+msgstr "Użytkownik został usunięty."
+
+#: Controller/UsersController.php:108
+msgid "The user could not be deleted. Please, try again."
+msgstr "Nie można usunąć użytkownika. Proszę spróbuj ponownie."
+
+#: Template/Athletes/add.ctp:9 Template/Athletes/edit.ctp:9
+#: Template/Athletes/index.ctp:9;41 Template/Athletes/view.ctp:9
+#: Template/Clubs/add.ctp:9 Template/Clubs/edit.ctp:9
+#: Template/Clubs/index.ctp:9;39 Template/Clubs/view.ctp:9;62;84
+#: Template/Events/add.ctp:9 Template/Events/edit.ctp:9
+#: Template/Events/index.ctp:9;40 Template/Events/view.ctp:9;74
+#: Template/Eventtypes/add.ctp:9 Template/Eventtypes/edit.ctp:9
+#: Template/Eventtypes/index.ctp:9;39 Template/Eventtypes/view.ctp:9
+#: Template/Files/add.ctp:9 Template/Files/edit.ctp:9
+#: Template/Files/index.ctp:9;44 Template/Files/view.ctp:9
+#: Template/Genres/add.ctp:9 Template/Genres/edit.ctp:9
+#: Template/Genres/index.ctp:9;39 Template/Genres/view.ctp:9
+#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;39 Template/Users/view.ctp:9;58
+msgid "Actions"
+msgstr "działania"
+
+#: Template/Athletes/add.ctp:10 Template/Athletes/edit.ctp:16
+#: Template/Athletes/index.ctp:11 Template/Athletes/view.ctp:13
+#: Template/Clubs/edit.ctp:16 Template/Clubs/index.ctp:11
+#: Template/Clubs/view.ctp:13 Template/Events/edit.ctp:16
+#: Template/Events/index.ctp:11 Template/Events/view.ctp:13
+#: Template/Eventtypes/edit.ctp:16 Template/Eventtypes/index.ctp:11
+#: Template/Eventtypes/view.ctp:13 Template/Files/edit.ctp:16
+#: Template/Files/index.ctp:11 Template/Files/view.ctp:13
+#: Template/Genres/edit.ctp:16 Template/Genres/index.ctp:11
+#: Template/Genres/view.ctp:13 Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:16 Template/Users/index.ctp:11
+#: Template/Users/view.ctp:13
+msgid "List Athletes"
+msgstr "Lista zawodników"
+
+#: Template/Athletes/add.ctp:16
+msgid "Add Athlete"
+msgstr "Dodaj sportowca"
+
+#: Template/Athletes/add.ctp:27 Template/Athletes/edit.ctp:52
+#: Template/Clubs/add.ctp:22 Template/Clubs/edit.ctp:47
+#: Template/Events/add.ctp:31 Template/Events/edit.ctp:52
+#: Template/Eventtypes/add.ctp:21 Template/Eventtypes/edit.ctp:46
+#: Template/Files/add.ctp:23 Template/Files/edit.ctp:49
+#: Template/Genres/add.ctp:21 Template/Genres/edit.ctp:46
+#: Template/Users/add.ctp:25 Template/Users/edit.ctp:48
+msgid "Submit"
+msgstr "Zatwierdź"
+
+#: Template/Athletes/edit.ctp:11 Template/Athletes/index.ctp:52
+#: Template/Clubs/edit.ctp:11 Template/Clubs/index.ctp:49
+#: Template/Clubs/view.ctp:71;92 Template/Events/edit.ctp:11
+#: Template/Events/index.ctp:51 Template/Events/view.ctp:83
+#: Template/Eventtypes/edit.ctp:11 Template/Eventtypes/index.ctp:49
+#: Template/Files/edit.ctp:11 Template/Files/index.ctp:59
+#: Template/Genres/edit.ctp:11 Template/Genres/index.ctp:49
+#: Template/Users/edit.ctp:11 Template/Users/index.ctp:49
+#: Template/Users/view.ctp:67
+msgid "Delete"
+msgstr "Kasować"
+
+#: Template/Athletes/edit.ctp:13 Template/Athletes/index.ctp:52
+#: Template/Athletes/view.ctp:12 Template/Clubs/edit.ctp:13
+#: Template/Clubs/index.ctp:49 Template/Clubs/view.ctp:11;71;92
+#: Template/Events/edit.ctp:13 Template/Events/index.ctp:51
+#: Template/Events/view.ctp:11;83 Template/Eventtypes/edit.ctp:13
+#: Template/Eventtypes/index.ctp:49 Template/Eventtypes/view.ctp:11
+#: Template/Files/edit.ctp:13 Template/Files/index.ctp:59
+#: Template/Files/view.ctp:11 Template/Genres/edit.ctp:13
+#: Template/Genres/index.ctp:49 Template/Genres/view.ctp:11
+#: Template/Users/edit.ctp:13 Template/Users/index.ctp:49
+#: Template/Users/view.ctp:11;67
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Czy na pewno chcesz usunąć # {0}?"
+
+#: Template/Athletes/edit.ctp:17 Template/Athletes/index.ctp:12
+#: Template/Athletes/view.ctp:14 Template/Clubs/add.ctp:10
+#: Template/Clubs/edit.ctp:17 Template/Clubs/index.ctp:12
+#: Template/Clubs/view.ctp:14 Template/Events/add.ctp:11
+#: Template/Events/edit.ctp:17 Template/Events/index.ctp:12
+#: Template/Events/view.ctp:14 Template/Eventtypes/edit.ctp:17
+#: Template/Eventtypes/index.ctp:12 Template/Eventtypes/view.ctp:14
+#: Template/Files/edit.ctp:17 Template/Files/index.ctp:12
+#: Template/Files/view.ctp:14 Template/Genres/edit.ctp:17
+#: Template/Genres/index.ctp:12 Template/Genres/view.ctp:14
+#: Template/Users/edit.ctp:17 Template/Users/index.ctp:12
+#: Template/Users/view.ctp:14
+msgid "List Clubs"
+msgstr "Lista klubów"
+
+#: Template/Athletes/edit.ctp:18 Template/Athletes/index.ctp:13
+#: Template/Athletes/view.ctp:15 Template/Clubs/edit.ctp:18
+#: Template/Clubs/index.ctp:13 Template/Clubs/view.ctp:15
+#: Template/Events/edit.ctp:18 Template/Events/index.ctp:13
+#: Template/Events/view.ctp:15 Template/Eventtypes/edit.ctp:18
+#: Template/Eventtypes/index.ctp:13 Template/Eventtypes/view.ctp:15
+#: Template/Files/edit.ctp:18 Template/Files/index.ctp:13
+#: Template/Files/view.ctp:15 Template/Genres/edit.ctp:18
+#: Template/Genres/index.ctp:13 Template/Genres/view.ctp:15
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:13 Template/Users/view.ctp:15
+msgid "List Users"
+msgstr "Lista użytkowników"
+
+#: Template/Athletes/edit.ctp:19 Template/Athletes/index.ctp:14
+#: Template/Athletes/view.ctp:16 Template/Clubs/edit.ctp:19
+#: Template/Clubs/index.ctp:14 Template/Clubs/view.ctp:16
+#: Template/Events/add.ctp:10 Template/Events/edit.ctp:19
+#: Template/Events/index.ctp:14 Template/Events/view.ctp:16
+#: Template/Eventtypes/edit.ctp:19 Template/Eventtypes/index.ctp:14
+#: Template/Eventtypes/view.ctp:16 Template/Files/edit.ctp:19
+#: Template/Files/index.ctp:14 Template/Files/view.ctp:16
+#: Template/Genres/edit.ctp:19 Template/Genres/index.ctp:14
+#: Template/Genres/view.ctp:16 Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:14 Template/Users/view.ctp:16
+msgid "List Events"
+msgstr "Lista wydarzeń \t"
+
+#: Template/Athletes/edit.ctp:20 Template/Athletes/index.ctp:15
+#: Template/Athletes/view.ctp:17 Template/Clubs/edit.ctp:20
+#: Template/Clubs/index.ctp:15 Template/Clubs/view.ctp:17
+#: Template/Events/edit.ctp:20 Template/Events/index.ctp:15
+#: Template/Events/view.ctp:17 Template/Eventtypes/edit.ctp:20
+#: Template/Eventtypes/index.ctp:15 Template/Eventtypes/view.ctp:17
+#: Template/Files/edit.ctp:20 Template/Files/index.ctp:15
+#: Template/Files/view.ctp:17 Template/Genres/edit.ctp:20
+#: Template/Genres/index.ctp:15 Template/Genres/view.ctp:17
+#: Template/Users/edit.ctp:20 Template/Users/index.ctp:15
+#: Template/Users/view.ctp:17
+msgid "List Event Types"
+msgstr "Lista typów zdarzeń"
+
+#: Template/Athletes/edit.ctp:25 Template/Athletes/index.ctp:20
+#: Template/Athletes/view.ctp:22 Template/Clubs/edit.ctp:25
+#: Template/Clubs/index.ctp:20 Template/Clubs/view.ctp:22
+#: Template/Events/edit.ctp:25 Template/Events/index.ctp:20
+#: Template/Events/view.ctp:22 Template/Eventtypes/edit.ctp:25
+#: Template/Eventtypes/index.ctp:20 Template/Eventtypes/view.ctp:22
+#: Template/Files/edit.ctp:25 Template/Files/index.ctp:20
+#: Template/Files/view.ctp:22 Template/Genres/add.ctp:10
+#: Template/Genres/edit.ctp:25 Template/Genres/index.ctp:20
+#: Template/Genres/view.ctp:22 Template/Users/edit.ctp:25
+#: Template/Users/index.ctp:20 Template/Users/view.ctp:22
+msgid "List Genres"
+msgstr "Lista gatunków"
+
+#: Template/Athletes/edit.ctp:33 Template/Athletes/index.ctp:28
+#: Template/Athletes/view.ctp:30 Template/Clubs/edit.ctp:33
+#: Template/Clubs/index.ctp:28 Template/Clubs/view.ctp:30
+#: Template/Events/edit.ctp:33 Template/Events/index.ctp:28
+#: Template/Events/view.ctp:30 Template/Eventtypes/edit.ctp:33
+#: Template/Eventtypes/index.ctp:28 Template/Eventtypes/view.ctp:30
+#: Template/Files/edit.ctp:33 Template/Files/index.ctp:28
+#: Template/Files/view.ctp:30 Template/Genres/edit.ctp:33
+#: Template/Genres/index.ctp:28 Template/Genres/view.ctp:30
+#: Template/Users/edit.ctp:33 Template/Users/index.ctp:28
+#: Template/Users/view.ctp:30
+msgid "List Files Images"
+msgstr "Lista plików obrazów"
+
+#: Template/Athletes/edit.ctp:41 Template/Athletes/view.ctp:11
+msgid "Edit Athlete"
+msgstr "Edytuj sportowca"
+
+#: Template/Athletes/index.ctp:10 Template/Athletes/view.ctp:10
+#: Template/Users/add.ctp:12
+msgid "New Athlete"
+msgstr "Nowy sportowiec \t"
+
+#: Template/Athletes/index.ctp:35
+msgid "Athletes"
+msgstr "Sportowcy"
+
+#: Template/Athletes/index.ctp:50 Template/Clubs/index.ctp:47
+#: Template/Clubs/view.ctp:69;90 Template/Events/index.ctp:49
+#: Template/Events/view.ctp:81 Template/Eventtypes/index.ctp:47
+#: Template/Files/index.ctp:57 Template/Genres/index.ctp:47
+#: Template/Users/index.ctp:47 Template/Users/view.ctp:65
+msgid "View"
+msgstr "Widok"
+
+#: Template/Athletes/index.ctp:51 Template/Clubs/index.ctp:48
+#: Template/Clubs/view.ctp:70;91 Template/Events/index.ctp:50
+#: Template/Events/view.ctp:82 Template/Eventtypes/index.ctp:48
+#: Template/Files/index.ctp:58 Template/Genres/index.ctp:48
+#: Template/Users/index.ctp:48 Template/Users/view.ctp:66
+msgid "Edit"
+msgstr "Edytować"
+
+#: Template/Athletes/index.ctp:60 Template/Clubs/index.ctp:57
+#: Template/Events/index.ctp:59 Template/Eventtypes/index.ctp:57
+#: Template/Files/index.ctp:67 Template/Genres/index.ctp:57
+#: Template/Users/index.ctp:57
+msgid "first"
+msgstr "pierwszy"
+
+#: Template/Athletes/index.ctp:61 Template/Clubs/index.ctp:58
+#: Template/Events/index.ctp:60 Template/Eventtypes/index.ctp:58
+#: Template/Files/index.ctp:68 Template/Genres/index.ctp:58
+#: Template/Users/index.ctp:58
+msgid "previous"
+msgstr "poprzedni"
+
+#: Template/Athletes/index.ctp:63 Template/Clubs/index.ctp:60
+#: Template/Events/index.ctp:62 Template/Eventtypes/index.ctp:60
+#: Template/Files/index.ctp:70 Template/Genres/index.ctp:60
+#: Template/Users/index.ctp:60
+msgid "next"
+msgstr "Kolejny"
+
+#: Template/Athletes/index.ctp:64 Template/Clubs/index.ctp:61
+#: Template/Events/index.ctp:63 Template/Eventtypes/index.ctp:61
+#: Template/Files/index.ctp:71 Template/Genres/index.ctp:61
+#: Template/Users/index.ctp:61
+msgid "last"
+msgstr "ostatni, ubiegły, zeszły"
+
+#: Template/Athletes/index.ctp:66 Template/Clubs/index.ctp:63
+#: Template/Events/index.ctp:65 Template/Eventtypes/index.ctp:63
+#: Template/Files/index.ctp:73 Template/Genres/index.ctp:63
+#: Template/Users/index.ctp:63
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"Strona {{page}} z {{pages}}, pokazująca {{current}} rekordów z {{count}} "
+"razem"
+
+#: Template/Athletes/view.ctp:12
+msgid "Delete Athlete"
+msgstr "Usuń sportowca"
+
+#: Template/Athletes/view.ctp:39 Template/Events/view.ctp:43
+msgid "Other"
+msgstr "Inny"
+
+#: Template/Athletes/view.ctp:43 Template/Events/view.ctp:47
+msgid "Club"
+msgstr "Klub"
+
+#: Template/Athletes/view.ctp:47
+msgid "User"
+msgstr "Użytkownik"
+
+#: Template/Athletes/view.ctp:51
+msgid "Genre"
+msgstr "Gatunek muzyczny"
+
+#: Template/Athletes/view.ctp:55
+msgid "Event"
+msgstr "Zdarzenie"
+
+#: Template/Athletes/view.ctp:59 Template/Clubs/view.ctp:47
+#: Template/Events/view.ctp:59 Template/Files/view.ctp:51
+#: Template/Users/view.ctp:43
+msgid "Created"
+msgstr "Stworzony"
+
+#: Template/Athletes/view.ctp:63 Template/Clubs/view.ctp:51
+#: Template/Files/view.ctp:55 Template/Users/view.ctp:47
+msgid "Modified"
+msgstr "Zmodyfikowany"
+
+#: Template/Clubs/add.ctp:16
+msgid "Add Club"
+msgstr "Dodaj klub"
+
+#: Template/Clubs/edit.ctp:41 Template/Clubs/view.ctp:10
+msgid "Edit Club"
+msgstr "Edytuj klub"
+
+#: Template/Clubs/index.ctp:10 Template/Clubs/view.ctp:12
+#: Template/Events/add.ctp:12
+msgid "New Club"
+msgstr "Nowy klub"
+
+#: Template/Clubs/index.ctp:34
+msgid "Clubs"
+msgstr "Kluby"
+
+#: Template/Clubs/view.ctp:11
+msgid "Delete Club"
+msgstr "Usuń Club"
+
+#: Template/Clubs/view.ctp:39;83 Template/Files/view.ctp:39
+msgid "Name"
+msgstr "Nazwa"
+
+#: Template/Clubs/view.ctp:43
+msgid "Location"
+msgstr "Lokalizacja"
+
+#: Template/Clubs/view.ctp:56 Template/Events/view.ctp:68
+#: Template/Users/view.ctp:52
+msgid "Related Athletes"
+msgstr "Powiązani zawodnicy"
+
+#: Template/Clubs/view.ctp:60 Template/Events/view.ctp:72
+#: Template/Users/view.ctp:56
+msgid "First Name"
+msgstr "Imię"
+
+#: Template/Clubs/view.ctp:61 Template/Events/view.ctp:73
+#: Template/Users/view.ctp:57
+msgid "Last Name"
+msgstr "Nazwisko"
+
+#: Template/Clubs/view.ctp:79
+msgid "Related Events"
+msgstr "Powiązane wydarzenia"
+
+#: Template/Clubs/view.ctp:100
+msgid "Images Representing the club"
+msgstr "Obrazy Reprezentujące klub"
+
+#: Template/Events/add.ctp:13 Template/Eventtypes/add.ctp:10
+msgid "List Eventtypes"
+msgstr "Lista typów zdarzeń"
+
+#: Template/Events/add.ctp:14 Template/Eventtypes/index.ctp:10
+#: Template/Eventtypes/view.ctp:12
+msgid "New Eventtype"
+msgstr "Nowy typ zdarzenia \t"
+
+#: Template/Events/add.ctp:20
+msgid "Add Event"
+msgstr "Dodaj wydarzenie"
+
+#: Template/Events/edit.ctp:41 Template/Events/view.ctp:10
+msgid "Edit Event"
+msgstr "Edytuj wydarzenie"
+
+#: Template/Events/index.ctp:10 Template/Events/view.ctp:12
+msgid "New Event"
+msgstr "Nowe wydarzenie"
+
+#: Template/Events/index.ctp:34
+msgid "Events"
+msgstr "Wydarzenia"
+
+#: Template/Events/view.ctp:11
+msgid "Delete Event"
+msgstr "Usuń wydarzenie"
+
+#: Template/Events/view.ctp:39
+msgid "Distance"
+msgstr "Dystans"
+
+#: Template/Events/view.ctp:51
+msgid "Eventtype"
+msgstr "Typ wydarzenia"
+
+#: Template/Events/view.ctp:55
+msgid "Date"
+msgstr "Data"
+
+#: Template/Events/view.ctp:63
+msgid "Modifed"
+msgstr "Zmodyfikowano"
+
+#: Template/Eventtypes/add.ctp:16
+msgid "Add Eventtype"
+msgstr "Dodaj typ zdarzenia"
+
+#: Template/Eventtypes/edit.ctp:41 Template/Eventtypes/view.ctp:10
+msgid "Edit Eventtype"
+msgstr "Edytuj typ zdarzenia"
+
+#: Template/Eventtypes/index.ctp:34
+msgid "Eventtypes"
+msgstr "Typy zdarzeń"
+
+#: Template/Eventtypes/view.ctp:11
+msgid "Delete Eventtype"
+msgstr "Usuń typ zdarzenia"
+
+#: Template/Eventtypes/view.ctp:39 Template/Genres/view.ctp:39
+msgid "Description"
+msgstr "Opis"
+
+#: Template/Eventtypes/view.ctp:43 Template/Files/view.ctp:47
+msgid "Id"
+msgstr "ID"
+
+#: Template/Files/add.ctp:10
+msgid "List Files"
+msgstr "Lista plików"
+
+#: Template/Files/add.ctp:16
+msgid "Add File"
+msgstr "Dodaj plik"
+
+#: Template/Files/edit.ctp:41 Template/Files/view.ctp:10
+msgid "Edit File"
+msgstr "Edytuj plik"
+
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:12
+msgid "New File"
+msgstr "Nowy plik"
+
+#: Template/Files/index.ctp:34
+msgid "Files"
+msgstr "Akta"
+
+#: Template/Files/index.ctp:81 Template/Home/index.ctp:7
+msgid "Upload File"
+msgstr "Przesyłanie pliku"
+
+#: Template/Files/view.ctp:11
+msgid "Delete File"
+msgstr "Usunąć plik"
+
+#: Template/Files/view.ctp:43
+msgid "Path"
+msgstr "Ścieżka"
+
+#: Template/Files/view.ctp:59
+msgid "Status"
+msgstr "Status"
+
+#: Template/Files/view.ctp:60
+msgid "Yes"
+msgstr "tak"
+
+#: Template/Files/view.ctp:60
+msgid "No"
+msgstr "Nie"
+
+#: Template/Genres/add.ctp:16
+msgid "Add Genre"
+msgstr "Dodaj gatunek"
+
+#: Template/Genres/edit.ctp:41 Template/Genres/view.ctp:10
+msgid "Edit Genre"
+msgstr "Edytuj gatunek"
+
+#: Template/Genres/index.ctp:10 Template/Genres/view.ctp:12
+msgid "New Genre"
+msgstr "Nowy gatunek"
+
+#: Template/Genres/index.ctp:34
+msgid "Genres"
+msgstr "Gatunki"
+
+#: Template/Genres/view.ctp:11
+msgid "Delete Genre"
+msgstr "Usuń gatunek"
+
+#: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Błąd"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Plecy"
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr "Dodaj użytkownika"
+
+#: Template/Users/edit.ctp:41 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Edytuj użytkownika"
+
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:12
+msgid "New User"
+msgstr "Nowy użytkownik"
+
+#: Template/Users/index.ctp:34
+msgid "Users"
+msgstr "Użytkownicy"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Usuń użytkownika"
+
+#: Template/Users/view.ctp:39
+msgid "Email"
+msgstr "E-mail"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "Żądanego adresu {0} nie znaleziono na tym serwerze."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr "Wystąpił błąd wewnętrzny"
