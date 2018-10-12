@@ -37,7 +37,8 @@ Les admins peuvent tout faire et toute les options apparaissent dans le menu de 
 <p>La bd est sqlite n'est pas disponible</p>
 </p>
 
-<p>La database provient est <a href="http://www.databaseanswers.org/data_models/athletes_and_events/index.htm">Events and Athletes</a>
+<p>Le lien du github est <a href="https://github.com/StevenDesroches/gestionAthletes">https://github.com/StevenDesroches/gestionAthletes</a></p>
+<p>La database provient est <a href="http://www.databaseanswers.org/data_models/athletes_and_events/index.htm">http://www.databaseanswers.org/data_models/athletes_and_events/index.htm</a>
 </p>
 
 <?php echo $this->Html->image("db.png", ['alt' => "Actual Database Image"]); ?>
