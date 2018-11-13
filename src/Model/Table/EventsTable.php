@@ -11,6 +11,7 @@ use Cake\Validation\Validator;
  *
  * @property \App\Model\Table\ClubsTable|\Cake\ORM\Association\BelongsTo $Clubs
  * @property \App\Model\Table\EventtypesTable|\Cake\ORM\Association\BelongsTo $Eventtypes
+ * @property \App\Model\Table\SouseventtypesTable|\Cake\ORM\Association\BelongsTo $Souseventtypes
  *
  * @method \App\Model\Entity\Event get($primaryKey, $options = [])
  * @method \App\Model\Entity\Event newEntity($data = null, array $options = [])
@@ -45,13 +46,16 @@ class EventsTable extends Table
         $this->hasMany('Athletes', [
             'foreignKey' => 'events_id'
         ]);
-
         $this->belongsTo('Clubs', [
             'foreignKey' => 'clubs_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('Eventtypes', [
             'foreignKey' => 'eventTypes_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Souseventtypes', [
+            'foreignKey' => 'sousEventTypes_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -110,6 +114,7 @@ class EventsTable extends Table
     {
         $rules->add($rules->existsIn(['clubs_id'], 'Clubs'));
         $rules->add($rules->existsIn(['eventTypes_id'], 'Eventtypes'));
+        $rules->add($rules->existsIn(['sousEventTypes_id'], 'Souseventtypes'));
 
         return $rules;
     }

@@ -42,7 +42,7 @@ class AthletesTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
-        $this->addBehavior('Translate', ['fields' => ['other']]);
+        //$this->addBehavior('Translate', ['fields' => ['other']]);
 
         $this->addBehavior('Timestamp');
 

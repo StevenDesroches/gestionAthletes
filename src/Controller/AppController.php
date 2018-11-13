@@ -28,7 +28,6 @@ use Cake\I18n\I18n;
  */
 class AppController extends Controller
 {
-
     /**
      * Initialization hook method.
      *
@@ -38,6 +37,25 @@ class AppController extends Controller
      *
      * @return void
      */
+    use \Crud\Controller\ControllerTrait;
+    public $components = [
+        'RequestHandler',
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+            'listeners' => [
+                'Crud.Api',
+                'Crud.ApiPagination',
+                'Crud.ApiQueryLog'
+            ]
+        ]
+    ];
+
     public function initialize()
     {
         parent::initialize();
@@ -79,6 +97,20 @@ class AppController extends Controller
         $this->Auth->allow(['English', 'changelang']);
         $this->Auth->allow(['Polish', 'changelang']);
 
+    }
+
+    /**
+     * Before render callback.
+     *
+     * @param \Cake\Event\Event $event The beforeRender event.
+     * @return \Cake\Network\Response|null|void
+     */
+    public function beforeRender(Event $event) {
+        if (!array_key_exists('_serialize', $this->viewVars) &&
+            in_array($this->response->type(), ['application/json', 'application/xml'])
+        ) {
+            $this->set('_serialize', true);
+        }
     }
 
     public function changeLang($lang = 'en_US') {

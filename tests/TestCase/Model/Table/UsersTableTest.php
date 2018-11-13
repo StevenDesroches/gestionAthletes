@@ -28,17 +28,32 @@ class UsersTableTest extends TestCase
         'app.athletes'
     ];
 
-    /**
-     * setUp method
-     *
-     * @return void
-     */
     public function setUp()
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Users') ? [] : ['className' => UsersTable::class];
         $this->Users = TableRegistry::getTableLocator()->get('Users', $config);
     }
+
+    public function testFindPublished()
+    {
+        $query = $this->Users->find()->where([
+            'id' => 6,
+        ]);
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->execute();
+        //$expected = ['id' => 6, 'email' => 'admin@admin.admin'];
+
+        if ($result->count() > 0){
+            $this->assertTrue(true);
+        } else {
+            $this->assertFalse(true, "boom");
+        }
+
+        //$this->assertContains($expected, $result);
+        //$this->assertEquals($expected, $result);
+    }
+
 
     /**
      * tearDown method

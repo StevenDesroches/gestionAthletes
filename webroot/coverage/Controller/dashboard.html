@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\Ampps\www\GestionAthletes\src/Controller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="../.js/html5shiv.min.js"></script>
+  <script src="../.js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">D:\Ampps\www\GestionAthletes\src</a></li>
+        <li><a href="index.html">Controller</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ClubsController.php.html#13">App\Controller\ClubsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EmailsController.php.html#6">App\Controller\EmailsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#13">App\Controller\EventtypesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#13">App\Controller\FilesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#13">App\Controller\GenresController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HomeController.php.html#6">App\Controller\HomeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposController.php.html#5">App\Controller\ProposController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#13">App\Controller\SouseventtypesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AthletesController.php.html#13">App\Controller\AthletesController</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="EventsController.php.html#13">App\Controller\EventsController</a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="UsersController.php.html#18">App\Controller\UsersController</a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="PagesController.php.html#29">App\Controller\PagesController</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="AppController.php.html#29">App\Controller\AppController</a></td><td class="text-right">81%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ClubsController.php.html#13">App\Controller\ClubsController</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="FilesController.php.html#13">App\Controller\FilesController</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="EventtypesController.php.html#13">App\Controller\EventtypesController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="AthletesController.php.html#13">App\Controller\AthletesController</a></td><td class="text-right">175</td></tr>
+       <tr><td><a href="GenresController.php.html#13">App\Controller\GenresController</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#13">App\Controller\SouseventtypesController</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="UsersController.php.html#18">App\Controller\UsersController</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="EventsController.php.html#13">App\Controller\EventsController</a></td><td class="text-right">98</td></tr>
+       <tr><td><a href="HomeController.php.html#6">App\Controller\HomeController</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="PagesController.php.html#29">App\Controller\PagesController</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AppController.php.html#84"><abbr title="App\Controller\AppController::changeLang">changeLang</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposController.php.html#6"><abbr title="App\Controller\ProposController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#130"><abbr title="App\Controller\FilesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#143"><abbr title="App\Controller\FilesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#21"><abbr title="App\Controller\GenresController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#35"><abbr title="App\Controller\GenresController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#49"><abbr title="App\Controller\GenresController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#71"><abbr title="App\Controller\GenresController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#95"><abbr title="App\Controller\GenresController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GenresController.php.html#108"><abbr title="App\Controller\GenresController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HomeController.php.html#8"><abbr title="App\Controller\HomeController::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HomeController.php.html#20"><abbr title="App\Controller\HomeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#22"><abbr title="App\Controller\SouseventtypesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AthletesController.php.html#52"><abbr title="App\Controller\AthletesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#27"><abbr title="App\Controller\SouseventtypesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#37"><abbr title="App\Controller\SouseventtypesController::getByEventType">getByEventType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#55"><abbr title="App\Controller\SouseventtypesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#69"><abbr title="App\Controller\SouseventtypesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#92"><abbr title="App\Controller\SouseventtypesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#117"><abbr title="App\Controller\SouseventtypesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#80"><abbr title="App\Controller\UsersController::confirm">confirm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#101"><abbr title="App\Controller\UsersController::confirm2">confirm2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#148"><abbr title="App\Controller\UsersController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#161"><abbr title="App\Controller\UsersController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#173"><abbr title="App\Controller\UsersController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#104"><abbr title="App\Controller\FilesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#82"><abbr title="App\Controller\FilesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#68"><abbr title="App\Controller\FilesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#21"><abbr title="App\Controller\FilesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AthletesController.php.html#79"><abbr title="App\Controller\AthletesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AthletesController.php.html#107"><abbr title="App\Controller\AthletesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AthletesController.php.html#120"><abbr title="App\Controller\AthletesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#21"><abbr title="App\Controller\ClubsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#28"><abbr title="App\Controller\ClubsController::findClubs">findClubs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#53"><abbr title="App\Controller\ClubsController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#67"><abbr title="App\Controller\ClubsController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#91"><abbr title="App\Controller\ClubsController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#116"><abbr title="App\Controller\ClubsController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClubsController.php.html#129"><abbr title="App\Controller\ClubsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EmailsController.php.html#7"><abbr title="App\Controller\EmailsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventsController.php.html#21"><abbr title="App\Controller\EventsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventsController.php.html#38"><abbr title="App\Controller\EventsController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventsController.php.html#93"><abbr title="App\Controller\EventsController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventsController.php.html#129"><abbr title="App\Controller\EventsController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#21"><abbr title="App\Controller\EventtypesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#35"><abbr title="App\Controller\EventtypesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#49"><abbr title="App\Controller\EventtypesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#71"><abbr title="App\Controller\EventtypesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#95"><abbr title="App\Controller\EventtypesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventtypesController.php.html#108"><abbr title="App\Controller\EventtypesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventsController.php.html#142"><abbr title="App\Controller\EventsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="PagesController.php.html#41"><abbr title="App\Controller\PagesController::display">display</abbr></a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="EventsController.php.html#52"><abbr title="App\Controller\EventsController::add">add</abbr></a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="UsersController.php.html#124"><abbr title="App\Controller\UsersController::edit">edit</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="UsersController.php.html#179"><abbr title="App\Controller\UsersController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">70%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AthletesController.php.html#120"><abbr title="App\Controller\AthletesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="EventtypesController.php.html#108"><abbr title="App\Controller\EventtypesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ClubsController.php.html#129"><abbr title="App\Controller\ClubsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="HomeController.php.html#20"><abbr title="App\Controller\HomeController::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="FilesController.php.html#21"><abbr title="App\Controller\FilesController::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="UsersController.php.html#80"><abbr title="App\Controller\UsersController::confirm">confirm</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="PagesController.php.html#41"><abbr title="App\Controller\PagesController::display">display</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AthletesController.php.html#52"><abbr title="App\Controller\AthletesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UsersController.php.html#161"><abbr title="App\Controller\UsersController::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UsersController.php.html#101"><abbr title="App\Controller\UsersController::confirm2">confirm2</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#92"><abbr title="App\Controller\SouseventtypesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#69"><abbr title="App\Controller\SouseventtypesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="GenresController.php.html#71"><abbr title="App\Controller\GenresController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="GenresController.php.html#49"><abbr title="App\Controller\GenresController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FilesController.php.html#104"><abbr title="App\Controller\FilesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AthletesController.php.html#79"><abbr title="App\Controller\AthletesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FilesController.php.html#82"><abbr title="App\Controller\FilesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="EventtypesController.php.html#71"><abbr title="App\Controller\EventtypesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="EventtypesController.php.html#49"><abbr title="App\Controller\EventtypesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ClubsController.php.html#28"><abbr title="App\Controller\ClubsController::findClubs">findClubs</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ClubsController.php.html#67"><abbr title="App\Controller\ClubsController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ClubsController.php.html#91"><abbr title="App\Controller\ClubsController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="EventsController.php.html#93"><abbr title="App\Controller\EventsController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="EventsController.php.html#142"><abbr title="App\Controller\EventsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="EventtypesController.php.html#95"><abbr title="App\Controller\EventtypesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SouseventtypesController.php.html#117"><abbr title="App\Controller\SouseventtypesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ClubsController.php.html#116"><abbr title="App\Controller\ClubsController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="GenresController.php.html#108"><abbr title="App\Controller\GenresController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#148"><abbr title="App\Controller\UsersController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="GenresController.php.html#95"><abbr title="App\Controller\GenresController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="EventsController.php.html#129"><abbr title="App\Controller\EventsController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FilesController.php.html#143"><abbr title="App\Controller\FilesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FilesController.php.html#130"><abbr title="App\Controller\FilesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AthletesController.php.html#107"><abbr title="App\Controller\AthletesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#179"><abbr title="App\Controller\UsersController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="EventsController.php.html#52"><abbr title="App\Controller\EventsController::add">add</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="UsersController.php.html#124"><abbr title="App\Controller\UsersController::edit">edit</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.3.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.8</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.5.13</a> at Mon Nov 12 22:50:17 UTC 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../.js/holder.min.js" type="text/javascript"></script>
+  <script src="../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,0,1,1,0,1,1,0,0,1,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([50,0,0,0,0,0,2,1,2,0,0,11], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[81.25,2,"<a href=\"AppController.php.html#29\">App\\Controller\\AppController<\/a>"],[14.545454545454545,16,"<a href=\"AthletesController.php.html#13\">App\\Controller\\AthletesController<\/a>"],[0,18,"<a href=\"ClubsController.php.html#13\">App\\Controller\\ClubsController<\/a>"],[0,1,"<a href=\"EmailsController.php.html#6\">App\\Controller\\EmailsController<\/a>"],[100,4,"<a href=\"ErrorController.php.html#24\">App\\Controller\\ErrorController<\/a>"],[28.07017543859649,15,"<a href=\"EventsController.php.html#13\">App\\Controller\\EventsController<\/a>"],[0,15,"<a href=\"EventtypesController.php.html#13\">App\\Controller\\EventtypesController<\/a>"],[0,16,"<a href=\"FilesController.php.html#13\">App\\Controller\\FilesController<\/a>"],[0,12,"<a href=\"GenresController.php.html#13\">App\\Controller\\GenresController<\/a>"],[0,6,"<a href=\"HomeController.php.html#6\">App\\Controller\\HomeController<\/a>"],[58.82352941176471,8,"<a href=\"PagesController.php.html#29\">App\\Controller\\PagesController<\/a>"],[0,1,"<a href=\"ProposController.php.html#5\">App\\Controller\\ProposController<\/a>"],[0,12,"<a href=\"SouseventtypesController.php.html#13\">App\\Controller\\SouseventtypesController<\/a>"],[46.05263157894737,26,"<a href=\"UsersController.php.html#18\">App\\Controller\\UsersController<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"AppController.php.html#41\">App\\Controller\\AppController::initialize<\/a>"],[0,1,"<a href=\"AppController.php.html#84\">App\\Controller\\AppController::changeLang<\/a>"],[100,1,"<a href=\"AthletesController.php.html#21\">App\\Controller\\AthletesController::index<\/a>"],[100,1,"<a href=\"AthletesController.php.html#38\">App\\Controller\\AthletesController::view<\/a>"],[0,3,"<a href=\"AthletesController.php.html#52\">App\\Controller\\AthletesController::add<\/a>"],[0,3,"<a href=\"AthletesController.php.html#79\">App\\Controller\\AthletesController::edit<\/a>"],[0,2,"<a href=\"AthletesController.php.html#107\">App\\Controller\\AthletesController::delete<\/a>"],[0,6,"<a href=\"AthletesController.php.html#120\">App\\Controller\\AthletesController::isAuthorized<\/a>"],[0,1,"<a href=\"ClubsController.php.html#21\">App\\Controller\\ClubsController::index<\/a>"],[0,3,"<a href=\"ClubsController.php.html#28\">App\\Controller\\ClubsController::findClubs<\/a>"],[0,1,"<a href=\"ClubsController.php.html#53\">App\\Controller\\ClubsController::view<\/a>"],[0,3,"<a href=\"ClubsController.php.html#67\">App\\Controller\\ClubsController::add<\/a>"],[0,3,"<a href=\"ClubsController.php.html#91\">App\\Controller\\ClubsController::edit<\/a>"],[0,2,"<a href=\"ClubsController.php.html#116\">App\\Controller\\ClubsController::delete<\/a>"],[0,5,"<a href=\"ClubsController.php.html#129\">App\\Controller\\ClubsController::isAuthorized<\/a>"],[0,1,"<a href=\"EmailsController.php.html#7\">App\\Controller\\EmailsController::index<\/a>"],[100,1,"<a href=\"ErrorController.php.html#31\">App\\Controller\\ErrorController::initialize<\/a>"],[100,1,"<a href=\"ErrorController.php.html#44\">App\\Controller\\ErrorController::beforeFilter<\/a>"],[100,1,"<a href=\"ErrorController.php.html#54\">App\\Controller\\ErrorController::beforeRender<\/a>"],[100,1,"<a href=\"ErrorController.php.html#67\">App\\Controller\\ErrorController::afterFilter<\/a>"],[0,1,"<a href=\"EventsController.php.html#21\">App\\Controller\\EventsController::index<\/a>"],[0,1,"<a href=\"EventsController.php.html#38\">App\\Controller\\EventsController::view<\/a>"],[68.75,3,"<a href=\"EventsController.php.html#52\">App\\Controller\\EventsController::add<\/a>"],[0,3,"<a href=\"EventsController.php.html#93\">App\\Controller\\EventsController::edit<\/a>"],[0,2,"<a href=\"EventsController.php.html#129\">App\\Controller\\EventsController::delete<\/a>"],[50,5,"<a href=\"EventsController.php.html#142\">App\\Controller\\EventsController::isAuthorized<\/a>"],[0,1,"<a href=\"EventtypesController.php.html#21\">App\\Controller\\EventtypesController::index<\/a>"],[0,1,"<a href=\"EventtypesController.php.html#35\">App\\Controller\\EventtypesController::view<\/a>"],[0,3,"<a href=\"EventtypesController.php.html#49\">App\\Controller\\EventtypesController::add<\/a>"],[0,3,"<a href=\"EventtypesController.php.html#71\">App\\Controller\\EventtypesController::edit<\/a>"],[0,2,"<a href=\"EventtypesController.php.html#95\">App\\Controller\\EventtypesController::delete<\/a>"],[0,5,"<a href=\"EventtypesController.php.html#108\">App\\Controller\\EventtypesController::isAuthorized<\/a>"],[0,5,"<a href=\"FilesController.php.html#21\">App\\Controller\\FilesController::index<\/a>"],[0,1,"<a href=\"FilesController.php.html#68\">App\\Controller\\FilesController::view<\/a>"],[0,3,"<a href=\"FilesController.php.html#82\">App\\Controller\\FilesController::add<\/a>"],[0,3,"<a href=\"FilesController.php.html#104\">App\\Controller\\FilesController::edit<\/a>"],[0,2,"<a href=\"FilesController.php.html#130\">App\\Controller\\FilesController::delete<\/a>"],[0,2,"<a href=\"FilesController.php.html#143\">App\\Controller\\FilesController::isAuthorized<\/a>"],[0,1,"<a href=\"GenresController.php.html#21\">App\\Controller\\GenresController::index<\/a>"],[0,1,"<a href=\"GenresController.php.html#35\">App\\Controller\\GenresController::view<\/a>"],[0,3,"<a href=\"GenresController.php.html#49\">App\\Controller\\GenresController::add<\/a>"],[0,3,"<a href=\"GenresController.php.html#71\">App\\Controller\\GenresController::edit<\/a>"],[0,2,"<a href=\"GenresController.php.html#95\">App\\Controller\\GenresController::delete<\/a>"],[0,2,"<a href=\"GenresController.php.html#108\">App\\Controller\\GenresController::isAuthorized<\/a>"],[0,1,"<a href=\"HomeController.php.html#8\">App\\Controller\\HomeController::initialize<\/a>"],[0,5,"<a href=\"HomeController.php.html#20\">App\\Controller\\HomeController::index<\/a>"],[58.82352941176471,8,"<a href=\"PagesController.php.html#41\">App\\Controller\\PagesController::display<\/a>"],[0,1,"<a href=\"ProposController.php.html#6\">App\\Controller\\ProposController::index<\/a>"],[0,1,"<a href=\"SouseventtypesController.php.html#22\">App\\Controller\\SouseventtypesController::isAuthorized<\/a>"],[0,1,"<a href=\"SouseventtypesController.php.html#27\">App\\Controller\\SouseventtypesController::index<\/a>"],[0,1,"<a href=\"SouseventtypesController.php.html#37\">App\\Controller\\SouseventtypesController::getByEventType<\/a>"],[0,1,"<a href=\"SouseventtypesController.php.html#55\">App\\Controller\\SouseventtypesController::view<\/a>"],[0,3,"<a href=\"SouseventtypesController.php.html#69\">App\\Controller\\SouseventtypesController::add<\/a>"],[0,3,"<a href=\"SouseventtypesController.php.html#92\">App\\Controller\\SouseventtypesController::edit<\/a>"],[0,2,"<a href=\"SouseventtypesController.php.html#117\">App\\Controller\\SouseventtypesController::delete<\/a>"],[100,1,"<a href=\"UsersController.php.html#21\">App\\Controller\\UsersController::initialize<\/a>"],[100,1,"<a href=\"UsersController.php.html#32\">App\\Controller\\UsersController::index<\/a>"],[100,1,"<a href=\"UsersController.php.html#46\">App\\Controller\\UsersController::view<\/a>"],[100,3,"<a href=\"UsersController.php.html#60\">App\\Controller\\UsersController::add<\/a>"],[0,4,"<a href=\"UsersController.php.html#80\">App\\Controller\\UsersController::confirm<\/a>"],[0,3,"<a href=\"UsersController.php.html#101\">App\\Controller\\UsersController::confirm2<\/a>"],[70,3,"<a href=\"UsersController.php.html#124\">App\\Controller\\UsersController::edit<\/a>"],[0,2,"<a href=\"UsersController.php.html#148\">App\\Controller\\UsersController::delete<\/a>"],[0,3,"<a href=\"UsersController.php.html#161\">App\\Controller\\UsersController::login<\/a>"],[0,1,"<a href=\"UsersController.php.html#173\">App\\Controller\\UsersController::logout<\/a>"],[70,4,"<a href=\"UsersController.php.html#179\">App\\Controller\\UsersController::isAuthorized<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

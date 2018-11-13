@@ -4,6 +4,15 @@
  * @var \App\Model\Entity\Event $event
  */
 ?>
+<?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Souseventtypes",
+    "action" => "getByEventType",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Events/add', ['block' => 'scriptBottom']);
+?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -13,26 +22,15 @@
                 ['confirm' => __('Are you sure you want to delete # {0}?', $event->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Athletes'), ['controller' => 'Athletes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Events'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Clubs'), ['controller' => 'Clubs', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Events'), ['controller' => 'Events', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Event Types'), ['controller' => 'Eventtypes', 'action' => 'index']) ?></li>
-        <li>
-        <?php
-        $type = $this->request->session()->read('Auth.User.type');
-            if ($type == 3) {
-                echo $this->Html->link(__('List Genres'), ['controller' => 'Genres', 'action' => 'index']);
-            }
-        ?>
-        </li>
-        <li>
-        <?php
-            $type = $this->request->session()->read('Auth.User.type');
-            if ($type == 3) {
-                echo $this->Html->link(__('List Files Images'), ['controller' => 'Files', 'action' => 'index']);
-            }
-        ?>
+        <li><?= $this->Html->link(__('New Club'), ['controller' => 'Clubs', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Souseventtypes'), ['controller' => 'Souseventtypes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Souseventtype'), ['controller' => 'Souseventtypes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Eventtypes'), ['controller' => 'Eventtypes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Eventtype'), ['controller' => 'Eventtypes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Athletes'), ['controller' => 'Athletes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Athlete'), ['controller' => 'Athletes', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="events form large-9 medium-8 columns content">
@@ -46,6 +44,7 @@
             echo $this->Form->control('other');
             echo $this->Form->control('clubs_id', ['options' => $clubs]);
             echo $this->Form->control('eventTypes_id', ['options' => $eventtypes]);
+            echo $this->Form->control('sousEventTypes_id', ['options' => $souseventtypes]);
             echo $this->Form->control('modifed');
         ?>
     </fieldset>

@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\UsersController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -27,7 +28,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/users');
+        $this->assertResponseOk();
     }
 
     /**
@@ -37,7 +39,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/users/view/1');
+        $this->assertResponseOk();
     }
 
     /**
@@ -47,7 +50,34 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $data = [
+            'id' => 9,
+            'email' => 'test@test.test',
+            'password' => 'test',
+            'type' => 1,
+            'created' => '2014-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ];
+
+
+        $this->post('/users/add', $data);
+
+        $this->assertRedirectContains('/users', 'The user has been saved.');
+    }
+
+    public function testAddValidatorEmailFail()
+    {
+        $data = [
+            'id' => 9,
+            'email' => 't',
+            'password' => 'test',
+            'type' => 1,
+            'created' => '2014-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ];
+
+        $this->post('/users/add', $data);
+        $this->assertNoRedirect();
     }
 
     /**
@@ -57,7 +87,29 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 3,
+                    'email' => 'admin@admin.admin',
+                    'password' => 'admin',
+                    'type' => 3,
+                    'active' => 1,
+                    // autres clés.
+                ]
+            ]
+        ]);
+
+        $data = [
+            'id' => 1,
+            'email' => 'test@test.test',
+            'password' => 'test',
+            'type' => 2,
+            'created' => '2014-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ];
+        $this->post('/users/edit/1', $data);
+        $this->assertRedirectContains('/users', 'The user has been saved.');
     }
 
     /**
@@ -67,6 +119,17 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $data = [
+            'id' => 1,
+            'email' => 'test@test.test',
+            'password' => 'test',
+            'type' => 2,
+            'created' => '2014-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ];
+        $this->post(['controller' => 'Users', 'action' => 'delete'], $data);
+        $this->assertRedirectContains('/users', 'The user has been deleted.');
+
+
     }
 }

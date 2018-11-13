@@ -35,6 +35,10 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('CakePdf', ['bootstrap' => true]);
+
+        $this->addPlugin('Crud');
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
@@ -83,6 +87,7 @@ class Application extends BaseApplication
      */
     public function middleware($middlewareQueue)
     {
+
         $middlewareQueue
             // Catch any exceptions in the lower layers,
             // and make an error page/response
@@ -100,5 +105,6 @@ class Application extends BaseApplication
             ->add(new RoutingMiddleware($this, '_cake_routes_'));
 
         return $middlewareQueue;
+
     }
 }

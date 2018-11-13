@@ -52,6 +52,10 @@
             <td><?= $event->has('eventtype') ? $this->Html->link($event->eventtype->description, ['controller' => 'Eventtypes', 'action' => 'view', $event->eventtype->id]) : '' ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Souseventtype') ?></th>
+            <td><?= $event->has('souseventtype') ? $this->Html->link($event->souseventtype->description, ['controller' => 'Souseventtypes', 'action' => 'view', $event->souseventtype->id]) : '' ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Date') ?></th>
             <td><?= h($event->date) ?></td>
         </tr>

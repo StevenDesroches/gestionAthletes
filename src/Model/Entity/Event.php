@@ -13,10 +13,13 @@ use Cake\ORM\Entity;
  * @property string $other
  * @property int $clubs_id
  * @property int $eventTypes_id
+ * @property int $sousEventTypes_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modifed
  *
+ * @property \App\Model\Entity\Athlete[] $athletes
  * @property \App\Model\Entity\Club $club
+ * @property \App\Model\Entity\Souseventtype $souseventtype
  * @property \App\Model\Entity\Eventtype $eventtype
  */
 class Event extends Entity
@@ -38,9 +41,12 @@ class Event extends Entity
         'other' => true,
         'clubs_id' => true,
         'eventTypes_id' => true,
+        'sousEventTypes_id' => true,
         'created' => true,
         'modifed' => true,
+        'athletes' => true,
         'club' => true,
+        'souseventtype' => true,
         'eventtype' => true
     ];
 }

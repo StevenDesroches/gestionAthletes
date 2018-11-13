@@ -4,6 +4,9 @@
 <p>Automne 2018, Collège Montmorency.</p>
 <hr></head>
 <body><hr>
+
+<p>Le lien du coverage des test est <a href="http://localhost/GestionAthletes/webroot/coverage/index.html">http://localhost/GestionAthletes/webroot/coverage/index.html</a></p>
+<br><br>
 <p>Les visiteurs peuvent seulement regarder les éléments.<br>
 Les super-utilisateurs peuvent faire des ajouts et supprimer ce qu'ils ont ajoutés mais ne peuvent pas ajouter
 de nouveaux événement ou de nouveaux genres et ces options n'apparaissent pas dans le menu de gauche. <br>

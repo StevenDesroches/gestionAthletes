@@ -1,4 +1,13 @@
 <?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Souseventtypes",
+    "action" => "getByEventType",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Events/add', ['block' => 'scriptBottom']);
+?>
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Event $event
@@ -25,6 +34,7 @@
             echo $this->Form->control('other');
             echo $this->Form->control('clubs_id', ['options' => $clubs]);
             echo $this->Form->control('eventTypes_id', ['options' => $eventtypes]);
+            echo $this->Form->control('sousEventTypes_id', ['options' => $souseventtypes]);
             echo $this->Form->control('modifed');
         ?>
     </fieldset>

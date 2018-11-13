@@ -21,7 +21,7 @@ class EventsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Clubs', 'Eventtypes']
+            'contain' => ['Clubs', 'Souseventtypes', 'Eventtypes']
         ];
         $events = $this->paginate($this->Events);
 
@@ -38,7 +38,7 @@ class EventsController extends AppController
     public function view($id = null)
     {
         $event = $this->Events->get($id, [
-            'contain' => ['Clubs', 'Eventtypes', 'Athletes']
+            'contain' => ['Clubs', 'Souseventtypes', 'Eventtypes', 'Athletes']
         ]);
 
         $this->set('event', $event);
@@ -62,8 +62,25 @@ class EventsController extends AppController
             $this->Flash->error(__('The event could not be saved. Please, try again.'));
         }
         $clubs = $this->Events->Clubs->find('list', ['limit' => 200]);
+        //$souseventtypes = $this->Events->Souseventtypes->find('list', ['limit' => 200]);
+        //$this->loadModel('Eventtypes');
         $eventtypes = $this->Events->Eventtypes->find('list', ['limit' => 200]);
-        $this->set(compact('event', 'clubs', 'eventtypes'));
+
+        //$categories = $this->Categories->find('list', ['limit' => 200]);
+
+        // Extraire le id de la première catégorie
+        $eventtypes = $eventtypes->toArray();
+        reset($eventtypes);
+        $eventtypes_id = key($eventtypes);
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $souseventtypes = $this->Events->Souseventtypes->find('list', [
+            'conditions' => ['souseventtypes.eventtypes_id' => $eventtypes_id],
+        ]);
+
+
+
+        $this->set(compact('event', 'clubs', 'souseventtypes', 'eventtypes'));
     }
 
     /**
@@ -89,7 +106,17 @@ class EventsController extends AppController
         }
         $clubs = $this->Events->Clubs->find('list', ['limit' => 200]);
         $eventtypes = $this->Events->Eventtypes->find('list', ['limit' => 200]);
-        $this->set(compact('event', 'clubs', 'eventtypes'));
+
+        $eventtypes = $eventtypes->toArray();
+        reset($eventtypes);
+        $eventtypes_id = key($eventtypes);
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $souseventtypes = $this->Events->Souseventtypes->find('list', [
+            'conditions' => ['souseventtypes.eventtypes_id' => $eventtypes_id],
+        ]);
+
+        $this->set(compact('event', 'clubs', 'souseventtypes', 'eventtypes'));
     }
 
     /**

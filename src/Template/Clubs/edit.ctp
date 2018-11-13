@@ -4,6 +4,15 @@
  * @var \App\Model\Entity\Club $club
  */
 ?>
+<?php
+$urlToClubsAutocompletedemoJson = $this->Url->build([
+    "controller" => "Clubs",
+    "action" => "findClubs",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToClubsAutocompletedemoJson . '";', ['block' => true]);
+echo $this->Html->script('Clubs/autocompletedemo', ['block' => 'scriptBottom']);
+?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -41,7 +50,7 @@
         <legend><?= __('Edit Club') ?></legend>
         <?php
             echo $this->Form->control('name');
-            echo $this->Form->control('location');
+            echo $this->Form->control('location', ['id' => 'autocomplete']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

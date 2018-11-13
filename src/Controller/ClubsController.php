@@ -25,6 +25,24 @@ class ClubsController extends AppController
         $this->set(compact('clubs'));
     }
 
+    public function findClubs() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $location = $this->request->query['term'];
+            $results = $this->Clubs->find('all', array(
+                'conditions' => array('Clubs.location LIKE ' => '%' . $location . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['location'], 'value' => $result['location']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
     /**
      * View method
      *

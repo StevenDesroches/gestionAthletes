@@ -44,9 +44,21 @@ use Cake\Routing\Route\DashedRoute;
  * constructor in your `src/Application.php` file to change this behavior.
  *
  */
+Router::extensions(['json', 'xml', 'pdf']);
+
+
 Router::defaultRouteClass(DashedRoute::class);
 
+Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
+
+Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('Genres');
+});
+
 Router::scope('/', function (RouteBuilder $routes) {
+
+    $routes->resources('Genres');
 
     $routes->connect('/propos',['controller'=>'Propos','action'=>'index']);
 
@@ -54,7 +66,8 @@ Router::scope('/', function (RouteBuilder $routes) {
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered via `Application::routes()` with `registerMiddleware()`
      */
-    $routes->applyMiddleware('csrf');
+    //$routes->applyMiddleware('csrf');
+    //routes->registerMiddleware('csrf');
 
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',

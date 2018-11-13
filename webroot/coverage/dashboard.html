@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\Ampps\www\GestionAthletes\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">D:\Ampps\www\GestionAthletes\src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Installer.php.html#29">App\Console\Installer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#13">App\Controller\GenresController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Shell/ConsoleShell.php.html#25">App\Shell\ConsoleShell</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/FilesTable.php.html#25">App\Model\Table\FilesTable</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ProposController.php.html#5">App\Controller\ProposController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/HomeController.php.html#6">App\Controller\HomeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#13">App\Controller\SouseventtypesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#13">App\Controller\FilesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#13">App\Controller\EventtypesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#13">App\Controller\ClubsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/AjaxView.php.html#26">App\View\AjaxView</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EmailsController.php.html#6">App\Controller\EmailsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#13">App\Controller\AthletesController</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#13">App\Controller\EventsController</a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="Model/Table/AthletesTable.php.html#28">App\Model\Table\AthletesTable</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="Model/Table/EventtypesTable.php.html#21">App\Model\Table\EventtypesTable</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="Model/Table/GenresTable.php.html#21">App\Model\Table\GenresTable</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#18">App\Controller\UsersController</a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="Model/Table/SouseventtypesTable.php.html#23">App\Model\Table\SouseventtypesTable</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Model/Table/ClubsTable.php.html#25">App\Model\Table\ClubsTable</a></td><td class="text-right">52%</td></tr>
+       <tr><td><a href="Controller/PagesController.php.html#29">App\Controller\PagesController</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#19">App\Model\Entity\User</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Controller/AppController.php.html#29">App\Controller\AppController</a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Model/Table/EventsTable.php.html#27">App\Model\Table\EventsTable</a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Installer.php.html#29">App\Console\Installer</a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#13">App\Controller\ClubsController</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#13">App\Controller\FilesController</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#13">App\Controller\EventtypesController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#13">App\Controller\AthletesController</a></td><td class="text-right">175</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#13">App\Controller\GenresController</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#13">App\Controller\SouseventtypesController</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#18">App\Controller\UsersController</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#13">App\Controller\EventsController</a></td><td class="text-right">98</td></tr>
+       <tr><td><a href="Controller/HomeController.php.html#6">App\Controller\HomeController</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Controller/PagesController.php.html#29">App\Controller\PagesController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Shell/ConsoleShell.php.html#25">App\Shell\ConsoleShell</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#19">App\Model\Entity\User</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Installer.php.html#53"><abbr title="App\Console\Installer::postInstall">postInstall</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/HomeController.php.html#20"><abbr title="App\Controller\HomeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#69"><abbr title="App\Controller\SouseventtypesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#55"><abbr title="App\Controller\SouseventtypesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#37"><abbr title="App\Controller\SouseventtypesController::getByEventType">getByEventType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#27"><abbr title="App\Controller\SouseventtypesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#22"><abbr title="App\Controller\SouseventtypesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ProposController.php.html#6"><abbr title="App\Controller\ProposController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/HomeController.php.html#8"><abbr title="App\Controller\HomeController::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#117"><abbr title="App\Controller\SouseventtypesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#108"><abbr title="App\Controller\GenresController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#95"><abbr title="App\Controller\GenresController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#71"><abbr title="App\Controller\GenresController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#49"><abbr title="App\Controller\GenresController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#35"><abbr title="App\Controller\GenresController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#21"><abbr title="App\Controller\GenresController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#143"><abbr title="App\Controller\FilesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#92"><abbr title="App\Controller\SouseventtypesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#80"><abbr title="App\Controller\UsersController::confirm">confirm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#104"><abbr title="App\Controller\FilesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/FilesTable.php.html#34"><abbr title="App\Model\Table\FilesTable::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Shell/ConsoleShell.php.html#67"><abbr title="App\Shell\ConsoleShell::getOptionParser">getOptionParser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Shell/ConsoleShell.php.html#33"><abbr title="App\Shell\ConsoleShell::main">main</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/SouseventtypesTable.php.html#77"><abbr title="App\Model\Table\SouseventtypesTable::buildRules">buildRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/SouseventtypesTable.php.html#55"><abbr title="App\Model\Table\SouseventtypesTable::validationDefault">validationDefault</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/GenresTable.php.html#45"><abbr title="App\Model\Table\GenresTable::validationDefault">validationDefault</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/FilesTable.php.html#55"><abbr title="App\Model\Table\FilesTable::validationDefault">validationDefault</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/EventtypesTable.php.html#45"><abbr title="App\Model\Table\EventtypesTable::validationDefault">validationDefault</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#101"><abbr title="App\Controller\UsersController::confirm2">confirm2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/EventsTable.php.html#113"><abbr title="App\Model\Table\EventsTable::buildRules">buildRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/ClubsTable.php.html#63"><abbr title="App\Model\Table\ClubsTable::validationDefault">validationDefault</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/AthletesTable.php.html#103"><abbr title="App\Model\Table\AthletesTable::buildRules">buildRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Table/AthletesTable.php.html#69"><abbr title="App\Model\Table\AthletesTable::validationDefault">validationDefault</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#173"><abbr title="App\Controller\UsersController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#161"><abbr title="App\Controller\UsersController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#148"><abbr title="App\Controller\UsersController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#64"><abbr title="App\Console\Installer::anonymousFunction:64#187">anonymousFunction:64#187</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#130"><abbr title="App\Controller\FilesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#82"><abbr title="App\Controller\FilesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/AppController.php.html#84"><abbr title="App\Controller\AppController::changeLang">changeLang</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#28"><abbr title="App\Controller\ClubsController::findClubs">findClubs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#21"><abbr title="App\Controller\ClubsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#120"><abbr title="App\Controller\AthletesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#107"><abbr title="App\Controller\AthletesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#79"><abbr title="App\Controller\AthletesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#52"><abbr title="App\Controller\AthletesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#226"><abbr title="App\Console\Installer::setAppNameInFile">setAppNameInFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#68"><abbr title="App\Controller\FilesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#195"><abbr title="App\Console\Installer::setSecuritySaltInFile">setSecuritySaltInFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#180"><abbr title="App\Console\Installer::setSecuritySalt">setSecuritySalt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#154"><abbr title="App\Console\Installer::anonymousFunction:154#655">anonymousFunction:154#655</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#139"><abbr title="App\Console\Installer::anonymousFunction:139#539">anonymousFunction:139#539</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#136"><abbr title="App\Console\Installer::setFolderPermissions">setFolderPermissions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#116"><abbr title="App\Console\Installer::createWritableDirectories">createWritableDirectories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Installer.php.html#99"><abbr title="App\Console\Installer::createAppConfig">createAppConfig</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#53"><abbr title="App\Controller\ClubsController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#67"><abbr title="App\Controller\ClubsController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#91"><abbr title="App\Controller\ClubsController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#116"><abbr title="App\Controller\ClubsController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#21"><abbr title="App\Controller\FilesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#108"><abbr title="App\Controller\EventtypesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#95"><abbr title="App\Controller\EventtypesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#71"><abbr title="App\Controller\EventtypesController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#49"><abbr title="App\Controller\EventtypesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#35"><abbr title="App\Controller\EventtypesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#21"><abbr title="App\Controller\EventtypesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#129"><abbr title="App\Controller\EventsController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/AjaxView.php.html#43"><abbr title="App\View\AjaxView::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#93"><abbr title="App\Controller\EventsController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#38"><abbr title="App\Controller\EventsController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#21"><abbr title="App\Controller\EventsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EmailsController.php.html#7"><abbr title="App\Controller\EmailsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#129"><abbr title="App\Controller\ClubsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#142"><abbr title="App\Controller\EventsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Controller/PagesController.php.html#41"><abbr title="App\Controller\PagesController::display">display</abbr></a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#52"><abbr title="App\Controller\EventsController::add">add</abbr></a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#179"><abbr title="App\Controller\UsersController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#124"><abbr title="App\Controller\UsersController::edit">edit</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#52"><abbr title="App\Model\Entity\User::_setPassword">_setPassword</abbr></a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/AthletesController.php.html#120"><abbr title="App\Controller\AthletesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Console/Installer.php.html#53"><abbr title="App\Console\Installer::postInstall">postInstall</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#129"><abbr title="App\Controller\ClubsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#108"><abbr title="App\Controller\EventtypesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#21"><abbr title="App\Controller\FilesController::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Console/Installer.php.html#136"><abbr title="App\Console\Installer::setFolderPermissions">setFolderPermissions</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/HomeController.php.html#20"><abbr title="App\Controller\HomeController::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#80"><abbr title="App\Controller\UsersController::confirm">confirm</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller/PagesController.php.html#41"><abbr title="App\Controller\PagesController::display">display</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#69"><abbr title="App\Controller\SouseventtypesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#104"><abbr title="App\Controller\FilesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#82"><abbr title="App\Controller\FilesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#92"><abbr title="App\Controller\SouseventtypesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#71"><abbr title="App\Controller\EventtypesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#49"><abbr title="App\Controller\GenresController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#49"><abbr title="App\Controller\EventtypesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#93"><abbr title="App\Controller\EventsController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#101"><abbr title="App\Controller\UsersController::confirm2">confirm2</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#91"><abbr title="App\Controller\ClubsController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#67"><abbr title="App\Controller\ClubsController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#28"><abbr title="App\Controller\ClubsController::findClubs">findClubs</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#79"><abbr title="App\Controller\AthletesController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#52"><abbr title="App\Controller\AthletesController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Installer.php.html#226"><abbr title="App\Console\Installer::setAppNameInFile">setAppNameInFile</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Installer.php.html#195"><abbr title="App\Console\Installer::setSecuritySaltInFile">setSecuritySaltInFile</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Installer.php.html#154"><abbr title="App\Console\Installer::anonymousFunction:154#655">anonymousFunction:154#655</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Installer.php.html#139"><abbr title="App\Console\Installer::anonymousFunction:139#539">anonymousFunction:139#539</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Installer.php.html#116"><abbr title="App\Console\Installer::createWritableDirectories">createWritableDirectories</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#161"><abbr title="App\Controller\UsersController::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#71"><abbr title="App\Controller\GenresController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#142"><abbr title="App\Controller\EventsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Controller/SouseventtypesController.php.html#117"><abbr title="App\Controller\SouseventtypesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#148"><abbr title="App\Controller\UsersController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/EventtypesController.php.html#95"><abbr title="App\Controller\EventtypesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#108"><abbr title="App\Controller\GenresController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/GenresController.php.html#95"><abbr title="App\Controller\GenresController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#143"><abbr title="App\Controller\FilesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/FilesController.php.html#130"><abbr title="App\Controller\FilesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Console/Installer.php.html#64"><abbr title="App\Console\Installer::anonymousFunction:64#187">anonymousFunction:64#187</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#129"><abbr title="App\Controller\EventsController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/ClubsController.php.html#116"><abbr title="App\Controller\ClubsController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/AthletesController.php.html#107"><abbr title="App\Controller\AthletesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Console/Installer.php.html#99"><abbr title="App\Console\Installer::createAppConfig">createAppConfig</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Shell/ConsoleShell.php.html#33"><abbr title="App\Shell\ConsoleShell::main">main</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#179"><abbr title="App\Controller\UsersController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Controller/EventsController.php.html#52"><abbr title="App\Controller\EventsController::add">add</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Controller/UsersController.php.html#124"><abbr title="App\Controller\UsersController::edit">edit</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#52"><abbr title="App\Model\Entity\User::_setPassword">_setPassword</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.3.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.8</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.5.13</a> at Mon Nov 12 22:50:17 UTC 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,1,1,0,4,3,0,1,2,0,11], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([73,0,0,0,0,0,2,1,3,0,0,25], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,6,"<a href=\"Application.php.html#31\">App\\Application<\/a>"],[0,30,"<a href=\"Console\/Installer.php.html#29\">App\\Console\\Installer<\/a>"],[81.25,2,"<a href=\"Controller\/AppController.php.html#29\">App\\Controller\\AppController<\/a>"],[14.545454545454545,16,"<a href=\"Controller\/AthletesController.php.html#13\">App\\Controller\\AthletesController<\/a>"],[0,18,"<a href=\"Controller\/ClubsController.php.html#13\">App\\Controller\\ClubsController<\/a>"],[0,1,"<a href=\"Controller\/EmailsController.php.html#6\">App\\Controller\\EmailsController<\/a>"],[100,4,"<a href=\"Controller\/ErrorController.php.html#24\">App\\Controller\\ErrorController<\/a>"],[28.07017543859649,15,"<a href=\"Controller\/EventsController.php.html#13\">App\\Controller\\EventsController<\/a>"],[0,15,"<a href=\"Controller\/EventtypesController.php.html#13\">App\\Controller\\EventtypesController<\/a>"],[0,16,"<a href=\"Controller\/FilesController.php.html#13\">App\\Controller\\FilesController<\/a>"],[0,12,"<a href=\"Controller\/GenresController.php.html#13\">App\\Controller\\GenresController<\/a>"],[0,6,"<a href=\"Controller\/HomeController.php.html#6\">App\\Controller\\HomeController<\/a>"],[58.82352941176471,8,"<a href=\"Controller\/PagesController.php.html#29\">App\\Controller\\PagesController<\/a>"],[0,1,"<a href=\"Controller\/ProposController.php.html#5\">App\\Controller\\ProposController<\/a>"],[0,12,"<a href=\"Controller\/SouseventtypesController.php.html#13\">App\\Controller\\SouseventtypesController<\/a>"],[46.05263157894737,26,"<a href=\"Controller\/UsersController.php.html#18\">App\\Controller\\UsersController<\/a>"],[100,0,"<a href=\"Model\/Entity\/Athlete.php.html#26\">App\\Model\\Entity\\Athlete<\/a>"],[100,0,"<a href=\"Model\/Entity\/Club.php.html#19\">App\\Model\\Entity\\Club<\/a>"],[100,0,"<a href=\"Model\/Entity\/Event.php.html#25\">App\\Model\\Entity\\Event<\/a>"],[100,0,"<a href=\"Model\/Entity\/Eventtype.php.html#12\">App\\Model\\Entity\\Eventtype<\/a>"],[100,0,"<a href=\"Model\/Entity\/File.php.html#18\">App\\Model\\Entity\\File<\/a>"],[100,0,"<a href=\"Model\/Entity\/Genre.php.html#12\">App\\Model\\Entity\\Genre<\/a>"],[100,0,"<a href=\"Model\/Entity\/Souseventtype.php.html#15\">App\\Model\\Entity\\Souseventtype<\/a>"],[75,2,"<a href=\"Model\/Entity\/User.php.html#19\">App\\Model\\Entity\\User<\/a>"],[41.17647058823529,3,"<a href=\"Model\/Table\/AthletesTable.php.html#28\">App\\Model\\Table\\AthletesTable<\/a>"],[52.173913043478258,2,"<a href=\"Model\/Table\/ClubsTable.php.html#25\">App\\Model\\Table\\ClubsTable<\/a>"],[89.743589743589752,3,"<a href=\"Model\/Table\/EventsTable.php.html#27\">App\\Model\\Table\\EventsTable<\/a>"],[41.666666666666671,2,"<a href=\"Model\/Table\/EventtypesTable.php.html#21\">App\\Model\\Table\\EventtypesTable<\/a>"],[0,2,"<a href=\"Model\/Table\/FilesTable.php.html#25\">App\\Model\\Table\\FilesTable<\/a>"],[41.666666666666671,2,"<a href=\"Model\/Table\/GenresTable.php.html#21\">App\\Model\\Table\\GenresTable<\/a>"],[50,3,"<a href=\"Model\/Table\/SouseventtypesTable.php.html#23\">App\\Model\\Table\\SouseventtypesTable<\/a>"],[100,3,"<a href=\"Model\/Table\/UsersTable.php.html#25\">App\\Model\\Table\\UsersTable<\/a>"],[0,3,"<a href=\"Shell\/ConsoleShell.php.html#25\">App\\Shell\\ConsoleShell<\/a>"],[0,1,"<a href=\"View\/AjaxView.php.html#26\">App\\View\\AjaxView<\/a>"],[100,1,"<a href=\"View\/AppView.php.html#25\">App\\View\\AppView<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,4,"<a href=\"Application.php.html#36\">App\\Application::bootstrap<\/a>"],[100,1,"<a href=\"Application.php.html#68\">App\\Application::routes<\/a>"],[100,1,"<a href=\"Application.php.html#84\">App\\Application::middleware<\/a>"],[0,5,"<a href=\"Console\/Installer.php.html#53\">App\\Console\\Installer::postInstall<\/a>"],[0,2,"<a href=\"Console\/Installer.php.html#64\">App\\Console\\Installer::anonymousFunction:64#187<\/a>"],[0,2,"<a href=\"Console\/Installer.php.html#99\">App\\Console\\Installer::createAppConfig<\/a>"],[0,3,"<a href=\"Console\/Installer.php.html#116\">App\\Console\\Installer::createWritableDirectories<\/a>"],[0,5,"<a href=\"Console\/Installer.php.html#136\">App\\Console\\Installer::setFolderPermissions<\/a>"],[0,3,"<a href=\"Console\/Installer.php.html#139\">App\\Console\\Installer::anonymousFunction:139#539<\/a>"],[0,3,"<a href=\"Console\/Installer.php.html#154\">App\\Console\\Installer::anonymousFunction:154#655<\/a>"],[0,1,"<a href=\"Console\/Installer.php.html#180\">App\\Console\\Installer::setSecuritySalt<\/a>"],[0,3,"<a href=\"Console\/Installer.php.html#195\">App\\Console\\Installer::setSecuritySaltInFile<\/a>"],[0,3,"<a href=\"Console\/Installer.php.html#226\">App\\Console\\Installer::setAppNameInFile<\/a>"],[100,1,"<a href=\"Controller\/AppController.php.html#41\">App\\Controller\\AppController::initialize<\/a>"],[0,1,"<a href=\"Controller\/AppController.php.html#84\">App\\Controller\\AppController::changeLang<\/a>"],[100,1,"<a href=\"Controller\/AthletesController.php.html#21\">App\\Controller\\AthletesController::index<\/a>"],[100,1,"<a href=\"Controller\/AthletesController.php.html#38\">App\\Controller\\AthletesController::view<\/a>"],[0,3,"<a href=\"Controller\/AthletesController.php.html#52\">App\\Controller\\AthletesController::add<\/a>"],[0,3,"<a href=\"Controller\/AthletesController.php.html#79\">App\\Controller\\AthletesController::edit<\/a>"],[0,2,"<a href=\"Controller\/AthletesController.php.html#107\">App\\Controller\\AthletesController::delete<\/a>"],[0,6,"<a href=\"Controller\/AthletesController.php.html#120\">App\\Controller\\AthletesController::isAuthorized<\/a>"],[0,1,"<a href=\"Controller\/ClubsController.php.html#21\">App\\Controller\\ClubsController::index<\/a>"],[0,3,"<a href=\"Controller\/ClubsController.php.html#28\">App\\Controller\\ClubsController::findClubs<\/a>"],[0,1,"<a href=\"Controller\/ClubsController.php.html#53\">App\\Controller\\ClubsController::view<\/a>"],[0,3,"<a href=\"Controller\/ClubsController.php.html#67\">App\\Controller\\ClubsController::add<\/a>"],[0,3,"<a href=\"Controller\/ClubsController.php.html#91\">App\\Controller\\ClubsController::edit<\/a>"],[0,2,"<a href=\"Controller\/ClubsController.php.html#116\">App\\Controller\\ClubsController::delete<\/a>"],[0,5,"<a href=\"Controller\/ClubsController.php.html#129\">App\\Controller\\ClubsController::isAuthorized<\/a>"],[0,1,"<a href=\"Controller\/EmailsController.php.html#7\">App\\Controller\\EmailsController::index<\/a>"],[100,1,"<a href=\"Controller\/ErrorController.php.html#31\">App\\Controller\\ErrorController::initialize<\/a>"],[100,1,"<a href=\"Controller\/ErrorController.php.html#44\">App\\Controller\\ErrorController::beforeFilter<\/a>"],[100,1,"<a href=\"Controller\/ErrorController.php.html#54\">App\\Controller\\ErrorController::beforeRender<\/a>"],[100,1,"<a href=\"Controller\/ErrorController.php.html#67\">App\\Controller\\ErrorController::afterFilter<\/a>"],[0,1,"<a href=\"Controller\/EventsController.php.html#21\">App\\Controller\\EventsController::index<\/a>"],[0,1,"<a href=\"Controller\/EventsController.php.html#38\">App\\Controller\\EventsController::view<\/a>"],[68.75,3,"<a href=\"Controller\/EventsController.php.html#52\">App\\Controller\\EventsController::add<\/a>"],[0,3,"<a href=\"Controller\/EventsController.php.html#93\">App\\Controller\\EventsController::edit<\/a>"],[0,2,"<a href=\"Controller\/EventsController.php.html#129\">App\\Controller\\EventsController::delete<\/a>"],[50,5,"<a href=\"Controller\/EventsController.php.html#142\">App\\Controller\\EventsController::isAuthorized<\/a>"],[0,1,"<a href=\"Controller\/EventtypesController.php.html#21\">App\\Controller\\EventtypesController::index<\/a>"],[0,1,"<a href=\"Controller\/EventtypesController.php.html#35\">App\\Controller\\EventtypesController::view<\/a>"],[0,3,"<a href=\"Controller\/EventtypesController.php.html#49\">App\\Controller\\EventtypesController::add<\/a>"],[0,3,"<a href=\"Controller\/EventtypesController.php.html#71\">App\\Controller\\EventtypesController::edit<\/a>"],[0,2,"<a href=\"Controller\/EventtypesController.php.html#95\">App\\Controller\\EventtypesController::delete<\/a>"],[0,5,"<a href=\"Controller\/EventtypesController.php.html#108\">App\\Controller\\EventtypesController::isAuthorized<\/a>"],[0,5,"<a href=\"Controller\/FilesController.php.html#21\">App\\Controller\\FilesController::index<\/a>"],[0,1,"<a href=\"Controller\/FilesController.php.html#68\">App\\Controller\\FilesController::view<\/a>"],[0,3,"<a href=\"Controller\/FilesController.php.html#82\">App\\Controller\\FilesController::add<\/a>"],[0,3,"<a href=\"Controller\/FilesController.php.html#104\">App\\Controller\\FilesController::edit<\/a>"],[0,2,"<a href=\"Controller\/FilesController.php.html#130\">App\\Controller\\FilesController::delete<\/a>"],[0,2,"<a href=\"Controller\/FilesController.php.html#143\">App\\Controller\\FilesController::isAuthorized<\/a>"],[0,1,"<a href=\"Controller\/GenresController.php.html#21\">App\\Controller\\GenresController::index<\/a>"],[0,1,"<a href=\"Controller\/GenresController.php.html#35\">App\\Controller\\GenresController::view<\/a>"],[0,3,"<a href=\"Controller\/GenresController.php.html#49\">App\\Controller\\GenresController::add<\/a>"],[0,3,"<a href=\"Controller\/GenresController.php.html#71\">App\\Controller\\GenresController::edit<\/a>"],[0,2,"<a href=\"Controller\/GenresController.php.html#95\">App\\Controller\\GenresController::delete<\/a>"],[0,2,"<a href=\"Controller\/GenresController.php.html#108\">App\\Controller\\GenresController::isAuthorized<\/a>"],[0,1,"<a href=\"Controller\/HomeController.php.html#8\">App\\Controller\\HomeController::initialize<\/a>"],[0,5,"<a href=\"Controller\/HomeController.php.html#20\">App\\Controller\\HomeController::index<\/a>"],[58.82352941176471,8,"<a href=\"Controller\/PagesController.php.html#41\">App\\Controller\\PagesController::display<\/a>"],[0,1,"<a href=\"Controller\/ProposController.php.html#6\">App\\Controller\\ProposController::index<\/a>"],[0,1,"<a href=\"Controller\/SouseventtypesController.php.html#22\">App\\Controller\\SouseventtypesController::isAuthorized<\/a>"],[0,1,"<a href=\"Controller\/SouseventtypesController.php.html#27\">App\\Controller\\SouseventtypesController::index<\/a>"],[0,1,"<a href=\"Controller\/SouseventtypesController.php.html#37\">App\\Controller\\SouseventtypesController::getByEventType<\/a>"],[0,1,"<a href=\"Controller\/SouseventtypesController.php.html#55\">App\\Controller\\SouseventtypesController::view<\/a>"],[0,3,"<a href=\"Controller\/SouseventtypesController.php.html#69\">App\\Controller\\SouseventtypesController::add<\/a>"],[0,3,"<a href=\"Controller\/SouseventtypesController.php.html#92\">App\\Controller\\SouseventtypesController::edit<\/a>"],[0,2,"<a href=\"Controller\/SouseventtypesController.php.html#117\">App\\Controller\\SouseventtypesController::delete<\/a>"],[100,1,"<a href=\"Controller\/UsersController.php.html#21\">App\\Controller\\UsersController::initialize<\/a>"],[100,1,"<a href=\"Controller\/UsersController.php.html#32\">App\\Controller\\UsersController::index<\/a>"],[100,1,"<a href=\"Controller\/UsersController.php.html#46\">App\\Controller\\UsersController::view<\/a>"],[100,3,"<a href=\"Controller\/UsersController.php.html#60\">App\\Controller\\UsersController::add<\/a>"],[0,4,"<a href=\"Controller\/UsersController.php.html#80\">App\\Controller\\UsersController::confirm<\/a>"],[0,3,"<a href=\"Controller\/UsersController.php.html#101\">App\\Controller\\UsersController::confirm2<\/a>"],[70,3,"<a href=\"Controller\/UsersController.php.html#124\">App\\Controller\\UsersController::edit<\/a>"],[0,2,"<a href=\"Controller\/UsersController.php.html#148\">App\\Controller\\UsersController::delete<\/a>"],[0,3,"<a href=\"Controller\/UsersController.php.html#161\">App\\Controller\\UsersController::login<\/a>"],[0,1,"<a href=\"Controller\/UsersController.php.html#173\">App\\Controller\\UsersController::logout<\/a>"],[70,4,"<a href=\"Controller\/UsersController.php.html#179\">App\\Controller\\UsersController::isAuthorized<\/a>"],[75,2,"<a href=\"Model\/Entity\/User.php.html#52\">App\\Model\\Entity\\User::_setPassword<\/a>"],[100,1,"<a href=\"Model\/Table\/AthletesTable.php.html#37\">App\\Model\\Table\\AthletesTable::initialize<\/a>"],[0,1,"<a href=\"Model\/Table\/AthletesTable.php.html#69\">App\\Model\\Table\\AthletesTable::validationDefault<\/a>"],[0,1,"<a href=\"Model\/Table\/AthletesTable.php.html#103\">App\\Model\\Table\\AthletesTable::buildRules<\/a>"],[100,1,"<a href=\"Model\/Table\/ClubsTable.php.html#34\">App\\Model\\Table\\ClubsTable::initialize<\/a>"],[0,1,"<a href=\"Model\/Table\/ClubsTable.php.html#63\">App\\Model\\Table\\ClubsTable::validationDefault<\/a>"],[100,1,"<a href=\"Model\/Table\/EventsTable.php.html#36\">App\\Model\\Table\\EventsTable::initialize<\/a>"],[100,1,"<a href=\"Model\/Table\/EventsTable.php.html#69\">App\\Model\\Table\\EventsTable::validationDefault<\/a>"],[0,1,"<a href=\"Model\/Table\/EventsTable.php.html#113\">App\\Model\\Table\\EventsTable::buildRules<\/a>"],[100,1,"<a href=\"Model\/Table\/EventtypesTable.php.html#30\">App\\Model\\Table\\EventtypesTable::initialize<\/a>"],[0,1,"<a href=\"Model\/Table\/EventtypesTable.php.html#45\">App\\Model\\Table\\EventtypesTable::validationDefault<\/a>"],[0,1,"<a href=\"Model\/Table\/FilesTable.php.html#34\">App\\Model\\Table\\FilesTable::initialize<\/a>"],[0,1,"<a href=\"Model\/Table\/FilesTable.php.html#55\">App\\Model\\Table\\FilesTable::validationDefault<\/a>"],[100,1,"<a href=\"Model\/Table\/GenresTable.php.html#30\">App\\Model\\Table\\GenresTable::initialize<\/a>"],[0,1,"<a href=\"Model\/Table\/GenresTable.php.html#45\">App\\Model\\Table\\GenresTable::validationDefault<\/a>"],[100,1,"<a href=\"Model\/Table\/SouseventtypesTable.php.html#32\">App\\Model\\Table\\SouseventtypesTable::initialize<\/a>"],[0,1,"<a href=\"Model\/Table\/SouseventtypesTable.php.html#55\">App\\Model\\Table\\SouseventtypesTable::validationDefault<\/a>"],[0,1,"<a href=\"Model\/Table\/SouseventtypesTable.php.html#77\">App\\Model\\Table\\SouseventtypesTable::buildRules<\/a>"],[100,1,"<a href=\"Model\/Table\/UsersTable.php.html#34\">App\\Model\\Table\\UsersTable::initialize<\/a>"],[100,1,"<a href=\"Model\/Table\/UsersTable.php.html#56\">App\\Model\\Table\\UsersTable::validationDefault<\/a>"],[100,1,"<a href=\"Model\/Table\/UsersTable.php.html#88\">App\\Model\\Table\\UsersTable::buildRules<\/a>"],[0,2,"<a href=\"Shell\/ConsoleShell.php.html#33\">App\\Shell\\ConsoleShell::main<\/a>"],[0,1,"<a href=\"Shell\/ConsoleShell.php.html#67\">App\\Shell\\ConsoleShell::getOptionParser<\/a>"],[0,1,"<a href=\"View\/AjaxView.php.html#43\">App\\View\\AjaxView::initialize<\/a>"],[100,1,"<a href=\"View\/AppView.php.html#37\">App\\View\\AppView::initialize<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
