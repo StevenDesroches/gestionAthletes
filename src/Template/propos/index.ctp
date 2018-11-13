@@ -7,39 +7,29 @@
 
 <p>Le lien du coverage des test est <a href="http://localhost/GestionAthletes/webroot/coverage/index.html">http://localhost/GestionAthletes/webroot/coverage/index.html</a></p>
 <br><br>
-<p>Les visiteurs peuvent seulement regarder les éléments.<br>
-Les super-utilisateurs peuvent faire des ajouts et supprimer ce qu'ils ont ajoutés mais ne peuvent pas ajouter
-de nouveaux événement ou de nouveaux genres et ces options n'apparaissent pas dans le menu de gauche. <br>
-Les admins peuvent tout faire et toute les options apparaissent dans le menu de gauche<p>
-<br><br>
-<p>Les étapes pour tester le bon fonctionnement de mon application:</p>
-<p>Cliquez sur tout les menus de gauche disponible pour vérifier que chaque éléments amène au bon index de vue (liste d'éléments).</p>
-<p> et tester les options add, delete (de n'importe quel table, les visiteurs n'ont pas le droit)</p>
-<p>Changez de langue pour voir les options changer de langue (les éléments de la base de données de change pas de langue)</p>
-<br>
-<p>changez d'utilisateur pour un type 2 ("popo@popo.popo" et "popo" comme mot de passe)</p>
-<p>avec un utilisateur de type 2, il est maintenant possible d'utiliser les options add et delete pour les athletes de l'utilisateur</p>
-<br>
-<p>changez d'utilisateur pour un type 3 ("admin@admin.admin" et "4Dm1N" comme mot de passe)</p>
-<p>en comptant le nombre de "list" à gauche dans le menu, nous pouvons savoir qu'il y a plus de 5 tables dans la DB (6 pour les athletes)</p>
-<p>L'admin à tout les droit, des options à gauche dans le menu sont disponibles comme "list files images" qui permet d'upload des images</p>
-<p>les images ont une relation hasMany, (après avoir upload, il faut aller dans edit et ajouter un club à l'image)</p>
-<p>une image peux avoir un club, mais un club peut avoir plusieurs images, en allant dans la liste des clubs et en regardant le club "Pat'molle", il est possible de voir trois relations hasMany</p>
-<br>
-<p>en haut à gauche, il y a l'email de l'utilisateur et son rang, en cliquant dessus, nous arrivons à l'affichage des informations de l'utilisateur en question.</p>
-<p>pour terminer une session, il faut cliquer sur le bouton logout à gauche</p>
-<p>sans aucun utilisateur, cliquer sur "visiteur" amène à l'index des users</p>
-<br>
-<p>pour tester la confirmation par mail, il faut faire un nouveaux compte en entrant une adresse</p>
-<p>un message de confirmation est envoyer avec un lien et un code de confirmation (un Uuid fait avec uniqID de php)</p>
-<p>sur la page qui s'ouvre, il faut mettre le code dans le champs, puis cliquer sur le bouton valider</p>
-<p>une nouvelle page s'ouvre, il faut cliquer encore une fois sur le bouton submit, (le champs "active" est changer en 1)</p>
-<p>un utilisateur à besoin d'avoir son "active" en 1 pour pouvoir faire des actions sur le site</p>
-<p>cette page à un petit bug, l'affichage ne change pas et indique une erreur (mais elle fonctionne bel et bien)</p>
-<br>
-<p>La bd est sqlite n'est pas disponible</p>
-</p>
-
+<p>dans un premier temps, en regardant le lien des tests, en regardant dans les controllers, puis dans le controlleur des utilisateurs,
+il est possible de voir que les tests des méthodes de view, d'index, d'éditage et de d'ajout fonctionnent, mais pas la supression, mon test ne passe malheureusement pas
+par le controlleur.</p>
+<p>Dans le controlleur event, il est possible de voir les tests d'authentification</p>
+<p>Le test de la méthode find se trouve dans la table User, du nom de testFindPublished.</p>
+<p></p>
+<p>Il est possible que pour les étapes suivantes il faut être connecté, le compte admin est le suivant:</p>
+<p>email : admin@admin.admin</p>
+<p>password : admin</p>
+<p></p>
+<p>Pour tester les listes liés, il faut aller dans la liste des Events
+Puis il faut ajouter un nouveau event (ou éditer), puis en sélectionnant un event dans la liste (Marathon ou Sprint),
+les éléments du sélecteur "Sous event type" change</p>
+<p></p>
+<p>Pour tester l'Autocomplete, il faut aller dans la liste des clubs et créer un nouveau club (ou éditer), puis taper une lettre dans la barre de location.</p>
+<p>Moi aussi j'ai tricher puisque je n'ai pas utiliser une autre table pour les locations, j'ai simplement basé l'autocomplete sur le champ location de ma table club (comme dans l'exemple avec les voitures)</p>
+<p></p>
+<p>Pour l'affichage en vue Pdf, il faut aller dans l'index Athletes et cliquer sur PDF pour avoir la vue en Pdf</p>
+<p></p>
+<p>Pour ce qui concerne l'ajout et l'édition en monopage, il faut aller dans les genres, avec le compte administrateur, la liste des genres devrait être afficher</p>
+<p>Sinon la route est localhost/gestionAthletes/genres</p>
+<p>L'affichage se fait, mais il n'est pas possible d'ajouter ou d'éditage des éléments, mais sous la bd sqlite, la suppression est possible, ce qui n'est pas très utile.</p>
+<p></p>
 <p>Le lien du github est <a href="https://github.com/StevenDesroches/gestionAthletes">https://github.com/StevenDesroches/gestionAthletes</a></p>
 <p>La database provient est <a href="http://www.databaseanswers.org/data_models/athletes_and_events/index.htm">http://www.databaseanswers.org/data_models/athletes_and_events/index.htm</a>
 </p>
